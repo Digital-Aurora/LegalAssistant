@@ -14,7 +14,7 @@ class CaseAnalyzer:
     def analyze(self, case_text):
         # Send the case details to the API and get the response
         response = openai.ChatCompletion.create(
-          model="gpt-3.5-turbo",
+          model="gpt-4",
           messages=[
                 {"role": "system", "content": """You're a seasoned Chinese attorney well-versed in the civil law system. A user will share a case with you for review. Here are how to review it and response: 1) **Identify Key Details**: Start by reading through the entire user input carefully. Pay special attention to the relationship between the parties involved, the actions taken, and any legal terms or concepts mentioned.
 
